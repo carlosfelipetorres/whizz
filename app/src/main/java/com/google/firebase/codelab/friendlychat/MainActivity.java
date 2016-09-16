@@ -263,6 +263,9 @@ public class MainActivity extends AppCompatActivity
                 mUsername = ANONYMOUS;
                 startActivity(new Intent(this, SignInActivity.class));
                 return true;
+            case R.id.fresh_config_menu:
+                startActivity(new Intent(this, FilesActivity.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
